@@ -24,6 +24,7 @@
     align-items: center;
     padding: 36px 0 34px;
     border-right: solid 1px rgba(255, 255, 255, .1);
+    /*width: 46%;*/
 }
 
 @media screen and (max-width: 768px) {
@@ -44,14 +45,18 @@
 
 .info__activated-text {
     padding: 0 64px 0 30px;
-    min-width: 361px;
+}
+
+@media screen and (max-width: 1024px) {
+    .info__activated-text {
+        padding: 0 34px 0 20px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .info__activated-text {
         padding: 0;
         padding-left: 15px;
-        min-width: 190px;
     }
 }
 
@@ -138,7 +143,7 @@
 .info__data {
     display: grid;
     padding: 50px;
-    width: 100%;
+    /*width: 54%;*/
     gap: 30px 40px;
     grid-template-areas:
             'item1 item3 item5'
