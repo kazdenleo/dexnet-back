@@ -1,0 +1,235 @@
+.info {
+    border-top: solid 1px rgba(255, 255, 255, .1);
+    border-bottom: solid 1px rgba(255, 255, 255, .1);
+}
+
+.info:last-of-type {
+    border-top: none;
+}
+
+.info__content {
+    display: flex;
+    padding: 0 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .info__content {
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+.info__activated {
+    display: flex;
+    align-items: center;
+    padding: 36px 0 34px;
+    border-right: solid 1px rgba(255, 255, 255, .1);
+}
+
+@media screen and (max-width: 768px) {
+    .info__activated {
+        border-bottom: solid 1px rgba(255, 255, 255, .1);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info__activated {
+        padding: 20px 0 15px;
+    }
+}
+
+.info__img {
+    max-width: 215px;
+}
+
+.info__activated-text {
+    padding: 0 64px 0 30px;
+    min-width: 361px;
+}
+
+@media screen and (max-width: 768px) {
+    .info__activated-text {
+        padding: 0;
+        padding-left: 15px;
+        min-width: 190px;
+    }
+}
+
+.info__title {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: .9;
+    padding-bottom: 27px;
+    color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+    .info__title {
+        width: 200px;
+    }
+}
+
+.info__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #fff;
+    opacity: .4;
+    max-width: 310px;
+    padding-bottom: 22px;
+}
+
+.info_child {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .info_main {
+        display: none;
+    }
+    .info_child {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .info__travel  {
+        padding: 12px 0 74px 16px;
+    }
+}
+
+.info__pass {
+    display: flex;
+}
+
+.info__pass-item {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: .9;
+    opacity: .2;
+    color: #fff;
+    border-bottom: solid 2px rgba(255, 255, 255, 1);
+    margin-right: 3px;
+}
+
+.info__item1 { grid-area: item1; }
+
+@media screen and (max-width: 480px) {
+    .info__item1  {
+        border-right: solid 1px rgba(255, 255, 255, .1);
+    }
+}
+
+
+.info__item2 { grid-area: item2; }
+
+@media screen and (max-width: 480px) {
+    .info__item2  {
+        display: none;
+    }
+}
+
+.info__item3 { grid-area: item3; }
+.info__item4 { grid-area: item4; }
+.info__item5 { grid-area: item5; }
+.info__item6 { grid-area: item6; }
+
+
+.info__data {
+    display: grid;
+    padding: 50px;
+    width: 100%;
+    gap: 30px 40px;
+    grid-template-areas:
+            'item1 item3 item5'
+            'item2 item4 item6';
+}
+
+@media screen and (max-width: 768px) {
+    .info__data {
+        padding: 40 0 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .info__data {
+        padding: 0;
+        gap: 0px;
+        grid-template-areas:
+        'item1 item4'
+        'item3 item3'
+        'item6 item6'
+        'item5 item5';
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .info__data-item  {
+        padding: 12px 16px 14px;
+        border-bottom: solid 1px rgba(255, 255, 255, .1);
+    }
+}
+
+.info__text-name {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #fff;
+    opacity: .4;
+    display: inline;
+}
+
+.info__text-value {
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+    color: #fff;
+    opacity: .9;
+}
+
+@media screen and (max-width: 480px) {
+    .info__item6 .info__text-value  {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.info__text-edit {
+    color: #00FFF0;
+    font-weight: 400;
+    font-style: 16px;
+    line-height: 1.25;
+    text-decoration: none;
+}
+
+.info__text-edit-img {
+    padding-right: 3px;
+}
+
+.info__sell {
+    display: flex;
+    align-items: center;
+}
+
+.info__button {
+    background-color: #00FFF0;
+    color: #000;
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+    font-family: 'Jura';
+    min-width: 141px;
+}
+
+.info__button:hover {
+    box-shadow: 0 0 0 5px #00FFF0;
+}
+
+.info__price {
+    font-weight: 700;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.25;
+    padding-left: 27px;
+}

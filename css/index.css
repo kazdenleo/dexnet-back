@@ -1,0 +1,16 @@
+@import url(./blocks/header.css);
+
+@import url(./blocks/main.css);
+@import url(./blocks/info.css);
+@import url(./blocks/map.css);
+@import url(./blocks/footer.css);
+@import url(./blocks/popup.css);
+@import url(./blocks/popupbtn.css);
+
+@import url(./main/_body.css);
+@import url(./main/_container.css);
+@import url(./main/_fonts.css);
+@import url(./main/_forms.css);
+@import url(./main/_img.css);
+@import url(./main/_text.css);
+@import url(./main/_variables.css);

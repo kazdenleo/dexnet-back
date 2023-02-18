@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'Eurostile';
+  	font-style: bold;
+  	font-weight: 700;
+ 	src: url("../../fonts/Eurostile-Bol.woff2") format("woff2"),
+   		 url("../../fonts/Eurostile-Bol.woff") format("woff");
+}
+
+@font-face {
+	font-family: 'Eurostile';
+	font-style: normal;
+	font-weight: 400;
+	src: url("../../fonts/Eurostile-Reg.woff2") format("woff2"),
+		 url("../../fonts/Eurostile-Reg.woff") format("woff");
+}
