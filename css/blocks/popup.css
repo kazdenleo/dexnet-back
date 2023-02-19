@@ -10,6 +10,7 @@
     opacity: 0;
     transition: visibility .2s, opacity 0.3s linear;
     z-index: 2;
+    padding: 0 15px;
 }
 
 .popup_active {
@@ -39,6 +40,12 @@
     padding: 50px;
 }
 
+@media screen and (max-width: 600px) {
+    .popup__container {
+        padding: 40px 20px;
+    }
+}
+
 .popup__titleblock {
     display: flex;
     justify-content: space-between;
@@ -46,11 +53,27 @@
     padding-bottom: 42px;
 }
 
+@media screen and (max-width: 600px) {
+    .popup__titleblock {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 39px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .popup__text {
+        text-align: center;
+        padding-bottom: 23px;
+    }
+}
+
 .popup__title {
     font-weight: 900;
     font-size: 26px;
     line-height: 1.1;
     color: rgb(255, 255, 255);
+    padding-bottom: 14px;
 }
 
 .popup__subtitle {
@@ -58,11 +81,16 @@
     font-weight: 400;
     line-height: 1.17;
     color:  rgba(255, 255, 255, 0.6);
-    padding-top: 13px;
 }
 
 .popup__price {
     text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+    .popup__price {
+        text-align: center;
+    }
 }
 
 .popup__coast {
@@ -73,7 +101,6 @@
 }
 
 .popup__usd {
-    padding-top: 9px;
     color: rgba(0, 255, 240, 1);
     font-weight: 500;
     font-size: 18px;
@@ -90,12 +117,26 @@
     display: flex;
 }
 
+@media screen and (max-width: 600px) {
+    .popup__pay-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .popup__info-info_unactive {
     display: none;
 }
 
 .popup__info-items {
     padding-bottom: 43px;
+}
+
+@media screen and (max-width: 600px) {
+    .popup__info-items {
+        text-align: center;
+        padding-bottom: 32px;
+    }
 }
 
 .popup__info-item {
@@ -122,6 +163,15 @@
 
 .popup__qr {
     height: 100%;
+    padding-left: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .popup__qr {
+        padding-bottom: 45px;
+        padding-left: 0;
+    }
 }
 
 .popup__line {
