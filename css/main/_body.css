@@ -4,7 +4,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Eurostile';
+  font-family: 'Eurostile', 'Arial', sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -12,13 +12,8 @@ body {
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   position: relative;
-  color: $color-dark;
   background: #f6f9fc;
   font-size: 12px;
   font-weight: 500;
   min-width: 320px;
-  @media screen and (min-width: 992px){
-    font-size: 14px;
-    background: #fff;
-  }
 }

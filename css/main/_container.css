@@ -6,13 +6,13 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .contaner_info {
+  .container_info {
     padding: 0 16px;
   }
 }
 
-@media screen and (max-width: 393px) {
-  .contaner_info {
+@media screen and (max-width: 480px) {
+  .container_info {
     padding: 0;
   }
 }

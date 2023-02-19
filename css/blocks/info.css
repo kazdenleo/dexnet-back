@@ -101,7 +101,6 @@
 
 @media screen and (max-width: 480px) {
     .info__title {
-        width: 200px;
         padding-top: 29px;
     }
 }
@@ -142,7 +141,7 @@
 
 .info__pass-item {
     border-bottom: solid 2px rgba(255, 255, 255, .2);
-    margin-right: 3px;
+    margin-right: 2px;
 }
 
 .info__pass-place {
@@ -156,6 +155,21 @@
     color: #fff;
     max-width: 27px;
     font-family: 'Eurostile Extd';
+}
+
+
+@media screen and (max-width: 1280px) {
+    .info__pass-place  {
+        font-size: 18px;
+        max-width: 20px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .info__pass-place  {
+        font-size: 14px;
+        max-width: 17px;
+    }
 }
 
 .info__pass-place:focus {
@@ -181,29 +195,32 @@
 .info__item5 { grid-area: item5; }
 .info__item6 { grid-area: item6; }
 
-.info__item11 { grid-area: item11; }
-.info__item12 { grid-area: item12; }
-.info__item13 { grid-area: item13; }
-.info__item14 { grid-area: item14; }
-
 .info__data {
     display: grid;
     padding: 48px 59px 50px;
     width: 54%;
     gap: 33px 49px;
     grid-template-columns: 155px 170px 227px;
-}
-
-.info__data_top {
     grid-template-areas:
     'item1 item3 item5'
     'item2 item4 item6';
 }
 
-.info__data_botom {
-    grid-template-areas:
-    'item11 item12 item13'
-    'item14 item15 item16';
+
+@media screen and (max-width: 1280px) {
+    .info__data {
+        padding: 48px 35px 50px;
+        gap: 33px 30px;
+        grid-template-columns: 155px 170px 175px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .info__data {
+        padding: 48px 35px 50px;
+        gap: 33px 30px;
+        grid-template-columns: 138px 125px 175px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -221,16 +238,9 @@
     .info__data_bottom {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-        'item11 item14'
-        'item12 item12'
-        'item13 item13';
-    }
-}
-
-@media screen and (max-width: 1281px) {
-    .info__data {
-        column-gap: 40px;
-        padding: 48px 40px 50px;
+        'item1 item2'
+        'item3 item3'
+        'item5 item5';
     }
 }
 
