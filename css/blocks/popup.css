@@ -25,6 +25,7 @@
     cursor: pointer;
     height: 16px;
     width: 16px;
+    background: url(../../img/exitPopup.svg);
 }
 
 .popup__container {
@@ -84,9 +85,13 @@
 }
 
 .popup__pay-info {
-    display: flex;
     justify-content: space-between;
     padding-top: 50px;
+    display: flex;
+}
+
+.popup__info-info_unactive {
+    display: none;
 }
 
 .popup__info-items {
@@ -122,5 +127,13 @@
 .popup__line {
     border: 0;
     height: 5px;
-    background-image: linear-gradient(90deg, rgba(0,255,240,1) 40%, rgba(255,255,255,.04) 40%);
+    transition: 1s;
+}
+
+.popup__line_left {
+    background-image: linear-gradient(90deg, rgba(0,255,240,1) 50%, rgba(255,255,255,.04) 50%);
+}
+
+.popup__line_right {
+    background-image: linear-gradient(90deg,  rgba(255,255,255,.04) 50%,rgba(0,255,240,1) 50%);
 }

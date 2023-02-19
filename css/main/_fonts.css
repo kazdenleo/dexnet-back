@@ -13,3 +13,19 @@
 	src: url("../../fonts/Eurostile-Reg.woff2") format("woff2"),
 		 url("../../fonts/Eurostile-Reg.woff") format("woff");
 }
+
+@font-face {
+	font-family: 'Eurostile Extd';
+	font-style: bold;
+	font-weight: 900;
+	src: url("../../fonts/eurostile_extended_black.woff2") format("woff2"),
+		 url("../../fonts/eurostile_extended_black.woff") format("woff");
+}
+
+@font-face {
+	font-family: 'Eurostile Extd';
+	font-style: regular;
+	font-weight: 400;
+	src: url("../../fonts/EurostileExtended.woff2") format("woff2"),
+		 url("../../fonts/EurostileExtended.woff") format("woff");
+}
